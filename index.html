@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>SINE, TRANSIENT, NOISE NEURAL MODELING OF PIANO NOTES</title>
+  <title>Conditioning Methods for Neural Audio Effects</title>
  <!--  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">-->
  <!--  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">-->
@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">SINE, TRANSIENT, NOISE NEURAL MODELING OF PIANO NOTES</h1>
+            <h1 class="title is-1 publication-title">Conditioning Methods for Neural Audio Effects</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -85,7 +85,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/RiccardoVib/STN_Neural" target="_blank"
+                    <a href="https://github.com/RiccardoVib/Conditioning-Methods-for-Neural-Audio-Effects" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -109,8 +109,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            This paper introduces a novel method for emulating piano sounds. We propose to exploit the sine, transient, and noise decomposition to design a differentiable spectral modeling synthesizer replicating piano notes. Three sub-modules learn these components from piano recordings and generate the corresponding harmonic, transient, and noise signals. Splitting the emulation into three independently trainable models reduces the modeling tasks’ complexity. The quasi-harmonic content is produced using a differentiable sinusoidal model, the noise using a learnable time-varying filter, and the transients are generated using a deep convolutional network. In addition, the harmonic component is guided by physics-derived formulas, whose parameters are automatically estimated from audio recordings. Beatings and double decay stages are also included. The results show the model matches the partial distribution of the target while predicting the energy in the higher part of the spectrum presents more challenges. Lastly, the energy distribution in the spectra of the transient and noise components is accurate overall.
-          </p>
+Machine learning techniques have become a common approach for modeling analog audio effects. Black- box and hybrid solutions have been applied to a large variety of audio effects. Audio effects usually incorporate user-controllable parameters, and how to infuse this information into the networks is still a challenge. Feature-wise Linear Modulation is a popular conditioning method, but its use in audio effect modeling is still limited. This technique involves an affine transformation via learnable coefficients based on conditioning information. This study compares this approach with other proposals used in this field, such as gated activation. In addition, the control parameters may present a nonlinear relationship with the effect’s associated sonic response. Therefore, the investigation also considers nonlinear mapping. This case study investigates two types of analog audio effects: distortion and dynamic range compression. Results indicate the conditioning layer leads to better performance if placed at the end of the architecture, and the Feature-wise Linear Modulation method outperforms other approaches. In addition, nonlinear mapping can be beneficial for cases with strong nonlinear relationships between parameters, such as the overdrive effect.          </p>
         </div>
       </div>
     </div>
