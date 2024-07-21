@@ -109,7 +109,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-Machine learning techniques have become a common approach for modeling analog audio effects. Black- box and hybrid solutions have been applied to a large variety of audio effects. Audio effects usually incorporate user-controllable parameters, and how to infuse this information into the networks is still a challenge. Feature-wise Linear Modulation is a popular conditioning method, but its use in audio effect modeling is still limited. This technique involves an affine transformation via learnable coefficients based on conditioning information. This study compares this approach with other proposals used in this field, such as gated activation. In addition, the control parameters may present a nonlinear relationship with the effect’s associated sonic response. Therefore, the investigation also considers nonlinear mapping. This case study investigates two types of analog audio effects: distortion and dynamic range compression. Results indicate the conditioning layer leads to better performance if placed at the end of the architecture, and the Feature-wise Linear Modulation method outperforms other approaches. In addition, nonlinear mapping can be beneficial for cases with strong nonlinear relationships between parameters, such as the overdrive effect.          </p>
+Machine learning techniques have become a common approach for modeling analog audio effects. Black-box and hybrid solutions have been applied to a large variety of audio effects. Audio effects usually incorporate user-controllable parameters, and how to infuse this information into the networks is still a challenge. Feature-wise Linear Modulation is a popular conditioning method, but its use in audio effect modeling is still limited. This technique involves an affine transformation via learnable coefficients based on conditioning information. This study compares this approach with other proposals used in this field, such as gated activation. In addition, the control parameters may present a nonlinear relationship with the effect’s associated sonic response. Therefore, the investigation also considers nonlinear mapping. This case study investigates two types of analog audio effects: distortion and dynamic range compression. Results indicate the conditioning layer leads to better performance if placed at the end of the architecture, and the Feature-wise Linear Modulation method outperforms other approaches. In addition, nonlinear mapping can be beneficial for cases with strong nonlinear relationships between parameters, such as the overdrive effect.          </p>
         </div>
       </div>
     </div>
@@ -117,6 +117,17 @@ Machine learning techniques have become a common approach for modeling analog au
 </section>
 <!-- End paper abstract -->
 
+  <section class="hero is-small is-light">
+  <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+    <div class="container">
+  <h2 class="title is-3">Datasets</h2>
+<a href="10.34740/kaggle/dsv/9004773">Compressors and Overdrive Dataset </a>
+      </div>
+    </div>
+     </div>
+ </section>
+  
 <!-- audio -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
@@ -662,7 +673,12 @@ Machine learning techniques have become a common approach for modeling analog au
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{simionato2024hybrid,
+  title={Conditioning Methods for Neural Audio Effects},
+  author={Simionato, Riccardo and Fasciani, Stefano},
+  booktitle={Proceedings of the International Conference on Sound and Music Computing},
+  year={2024}
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
